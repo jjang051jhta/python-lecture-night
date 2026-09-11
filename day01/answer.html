@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python 변수 연습문제 10개</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #222;
+      background: #f7f8fa;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .problem {
+      background: white;
+      padding: 24px;
+      margin-bottom: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .problem h2 {
+      margin-top: 0;
+      color: #2d5be3;
+    }
+
+    code {
+      font-family: Consolas, monospace;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #f5f5f5;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .hint {
+      background: #fff8d8;
+      padding: 12px 16px;
+      border-left: 4px solid #f2c94c;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🐍 Python 변수 연습문제</h1>
+
+  <p class="description">
+    변수와 기본 자료형을 복습해 봅시다.
+  </p>
+
+
+  <!-- 문제 1 -->
+
+  <div class="problem">
+
+    <h2>문제 1. 변수 만들기</h2>
+
+    <p>
+      이름, 나이, 키를 각각 변수에 저장하고 출력하세요.
+    </p>
+
+    <p>출력 결과</p>
+
+    <pre><code>이름: 홍길동
+나이: 20
+키: 175.5</code></pre>
+
+  </div>
+
+
+  <!-- 문제 2 -->
+
+  <div class="problem">
+
+    <h2>문제 2. 변수의 값 변경하기</h2>
+
+    <p>
+      다음 코드에서 score의 값을 90으로 변경한 후 출력하세요.
+    </p>
+
+    <pre><code>score = 70
+
+# 여기에 코드 작성
+
+print(score)</code></pre>
+
+    <p>출력 결과</p>
+
+    <pre><code>90</code></pre>
+
+  </div>
+
+
+  <!-- 문제 3 -->
+
+  <div class="problem">
+
+    <h2>문제 3. 변수 계산하기</h2>
+
+    <p>
+      다음 두 변수를 이용하여 더하기, 빼기, 곱하기 결과를 출력하세요.
+    </p>
+
+    <pre><code>num01 = 20
+num02 = 10</code></pre>
+
+    <p>출력 결과</p>
+
+    <pre><code>더하기: 30
+빼기: 10
+곱하기: 200</code></pre>
+
+  </div>
+
+
+  <!-- 문제 4 -->
+
+  <div class="problem">
+
+    <h2>문제 4. 자료형 확인하기</h2>
+
+    <p>
+      다음 변수들의 자료형을 type()을 이용하여 출력하세요.
+    </p>
+
+    <pre><code>name = "홍길동"
+age = 20
+height = 175.5
+is_student = True</code></pre>
+
+    <div class="hint">
+      💡 int, float, str, bool 중 어떤 자료형인지 확인해 보세요.
+    </div>
+
+  </div>
+
+
+  <!-- 문제 5 -->
+
+  <div class="problem">
+
+    <h2>문제 5. 자료형 변환하기</h2>
+
+    <p>
+      다음 숫자를 문자열로 변환하여 출력하세요.
+    </p>
+
+    <pre><code>age = 20
+
+# 여기에 코드 작성</code></pre>
+
+    <p>출력 결과</p>
+
+    <pre><code>내 나이는 20살입니다.</code></pre>
+
+    <div class="hint">
+      💡 str()을 사용하세요.
+    </div>
+
+  </div>
+
+
+  <!-- 문제 6 -->
+
+  <div class="problem">
+
+    <h2>문제 6. 리스트 값 출력하기</h2>
+
+    <p>다음 리스트가 있습니다.</p>
+
+    <pre><code>fruits = ["apple", "banana", "mango"]</code></pre>
+
+    <p>
+      인덱스를 이용하여 <strong>banana</strong>를 출력하세요.
+    </p>
+
+    <div class="hint">
+      💡 리스트의 인덱스는 0부터 시작합니다.
+    </div>
+
+  </div>
+
+
+  <!-- 문제 7 -->
+
+  <div class="problem">
+
+    <h2>문제 7. 리스트 값 변경하기</h2>
+
+    <p>다음 리스트가 있습니다.</p>
+
+    <pre><code>fruits = ["apple", "banana", "mango"]</code></pre>
+
+    <p>
+      banana를 strawberry로 변경하세요.
+    </p>
+
+    <p>최종 결과</p>
+
+    <pre><code>['apple', 'strawberry', 'mango']</code></pre>
+
+  </div>
+
+
+  <!-- 문제 8 -->
+
+  <div class="problem">
+
+    <h2>문제 8. 리스트에 값 추가하기</h2>
+
+    <p>다음 리스트가 있습니다.</p>
+
+    <pre><code>fruits = ["apple", "banana", "mango"]</code></pre>
+
+    <p>
+      리스트 마지막에 "peach"를 추가하세요.
+    </p>
+
+    <p>최종 결과</p>
+
+    <pre><code>['apple', 'banana', 'mango', 'peach']</code></pre>
+
+    <div class="hint">
+      💡 append()를 사용하세요.
+    </div>
+
+  </div>
+
+
+  <!-- 문제 9 -->
+
+  <div class="problem">
+
+    <h2>문제 9. 튜플을 리스트로 변환하기</h2>
+
+    <p>다음 튜플이 있습니다.</p>
+
+    <pre><code>colors = ("red", "green", "blue")</code></pre>
+
+    <p>
+      튜플을 리스트로 변환한 후 "yellow"를 추가하세요.
+    </p>
+
+    <p>최종 결과</p>
+
+    <pre><code>['red', 'green', 'blue', 'yellow']</code></pre>
+
+    <div class="hint">
+      💡 list()와 append()를 사용하세요.
+    </div>
+
+  </div>
+
+
+  <!-- 문제 10 -->
+
+  <div class="problem">
+
+    <h2>문제 10. 딕셔너리 값 출력하기</h2>
+
+    <p>다음 학생 정보가 있습니다.</p>
+
+    <pre><code>student = {
+    "name": "홍길동",
+    "age": 20,
+    "score": 85
+}</code></pre>
+
+    <p>
+      딕셔너리의 key를 이용하여 다음과 같이 출력하세요.
+    </p>
+
+    <pre><code>학생 이름: 홍길동
+나이: 20
+점수: 85</code></pre>
+
+    <div class="hint">
+      💡 student["name"]과 같은 방법으로 값을 가져올 수 있습니다.
+    </div>
+
+  </div>
+
+</body>
+</html>
+

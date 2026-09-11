@@ -1,0 +1,316 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python if문 연습문제 10개</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .problem {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .problem h2 {
+      margin-top: 0;
+    }
+
+    .level {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .example,
+    .hint {
+      background: #f1f3f5;
+      padding: 14px;
+      border-radius: 8px;
+      margin-top: 12px;
+      white-space: pre-line;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #eee;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐍 Python if문 연습문제 10개</h1>
+
+  <div class="problem">
+    <h2>문제 1. 양수 판별</h2>
+    <div class="level">난이도 ⭐</div>
+    <p>
+      사용자로부터 정수 하나를 입력받으세요.
+      입력한 숫자가 <strong>0보다 크면</strong>
+      "양수입니다."를 출력하세요.
+    </p>
+
+    <div class="example">
+숫자를 입력하세요: 10
+양수입니다.
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 2. 성인 판별</h2>
+    <div class="level">난이도 ⭐</div>
+    <p>
+      나이를 입력받아 18세 이상이면
+      "성인입니다.", 그렇지 않으면
+      "미성년자입니다."를 출력하세요.
+    </p>
+
+    <div class="example">
+나이를 입력하세요: 15
+미성년자입니다.
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 3. 짝수 / 홀수</h2>
+    <div class="level">난이도 ⭐⭐</div>
+    <p>
+      정수를 입력받아 짝수인지 홀수인지 출력하세요.
+    </p>
+
+    <div class="hint">
+힌트: % 연산자를 사용하세요.
+    </div>
+
+    <div class="example">
+숫자를 입력하세요: 7
+홀수입니다.
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 4. 큰 수 찾기</h2>
+    <div class="level">난이도 ⭐⭐</div>
+    <p>
+      두 개의 정수를 입력받아 더 큰 숫자를 출력하세요.
+      두 숫자가 같으면 "두 숫자가 같습니다."를 출력하세요.
+    </p>
+
+    <div class="example">
+첫 번째 숫자: 10
+두 번째 숫자: 30
+
+큰 숫자는 30입니다.
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 5. 점수에 따른 학점</h2>
+    <div class="level">난이도 ⭐⭐</div>
+
+    <p>점수를 입력받아 다음 기준으로 학점을 출력하세요.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>점수</th>
+          <th>학점</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>90점 이상</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>80점 이상</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>70점 이상</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>60점 이상</td>
+          <td>D</td>
+        </tr>
+        <tr>
+          <td>60점 미만</td>
+          <td>F</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="example">
+점수를 입력하세요: 85
+B학점입니다.
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 6. 로그인 프로그램</h2>
+    <div class="level">난이도 ⭐⭐</div>
+
+    <p>
+      아이디와 비밀번호를 입력받으세요.
+      아이디가 <code>admin</code>이고
+      비밀번호가 <code>1234</code>이면
+      "로그인 성공"을 출력하세요.
+    </p>
+
+    <p>그렇지 않으면 "로그인 실패"를 출력하세요.</p>
+
+    <div class="hint">
+힌트: 조건1 and 조건2
+    </div>
+
+    <div class="example">
+아이디: admin
+비밀번호: 1234
+
+로그인 성공
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 7. 할인 대상 판별</h2>
+    <div class="level">난이도 ⭐⭐</div>
+
+    <p>
+      나이를 입력받으세요.
+      13세 이하 또는 65세 이상이면
+      "할인 대상입니다."를 출력하세요.
+    </p>
+
+    <p>그렇지 않으면 "일반 요금입니다."를 출력하세요.</p>
+
+    <div class="hint">
+힌트: 조건1 or 조건2
+    </div>
+
+    <div class="example">
+나이: 70
+할인 대상입니다.
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 8. 세 숫자 중 가장 큰 수</h2>
+    <div class="level">난이도 ⭐⭐⭐</div>
+
+    <p>
+      서로 다른 정수 3개를 입력받아
+      가장 큰 숫자를 출력하세요.
+    </p>
+
+    <p>
+      <code>max()</code> 함수는 사용하지 않고
+      if문으로 해결하세요.
+    </p>
+
+    <div class="example">
+첫 번째 숫자: 10
+두 번째 숫자: 50
+세 번째 숫자: 30
+
+가장 큰 숫자는 50입니다.
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 9. 윤년 판별</h2>
+    <div class="level">난이도 ⭐⭐⭐</div>
+
+    <p>연도를 입력받아 윤년인지 판별하세요.</p>
+
+    <div class="hint">
+윤년 조건
+
+4의 배수이면서 100의 배수가 아니거나
+400의 배수이면 윤년
+    </div>
+
+    <div class="example">
+연도를 입력하세요: 2024
+윤년입니다.
+    </div>
+
+    <div class="example">
+연도를 입력하세요: 1900
+윤년이 아닙니다.
+    </div>
+  </div>
+
+  <div class="problem">
+    <h2>문제 10. 간단한 계산기</h2>
+    <div class="level">난이도 ⭐⭐⭐</div>
+
+    <p>
+      두 숫자와 연산자를 입력받아
+      계산 결과를 출력하세요.
+    </p>
+
+    <p>
+      <code>if</code>,
+      <code>elif</code>,
+      <code>else</code>를 사용하여
+      +, -, *, / 연산을 처리하세요.
+    </p>
+
+    <div class="example">
+첫 번째 숫자: 10
+연산자(+,-,*,/): *
+두 번째 숫자: 5
+
+결과: 50
+    </div>
+
+    <p>
+      잘못된 연산자를 입력하면
+      "지원하지 않는 연산자입니다."를 출력하세요.
+    </p>
+
+    <p>
+      나눗셈에서 두 번째 숫자가 0이면
+      "0으로 나눌 수 없습니다."를 출력하세요.
+    </p>
+  </div>
+
+</body>
+</html>
+```
