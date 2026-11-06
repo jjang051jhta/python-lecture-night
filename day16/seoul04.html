@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ad28ae21966c30dde10debb66bffffd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8ad28ae21966c30dde10debb66bffffd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8ad28ae21966c30dde10debb66bffffd = L.map(
+                "map_8ad28ae21966c30dde10debb66bffffd",
+                {
+                    center: [37.566535, 126.977969],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5ec69d38403ff2a6324a15ad4ede5600 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5ec69d38403ff2a6324a15ad4ede5600.addTo(map_8ad28ae21966c30dde10debb66bffffd);
+        
+    
+            var marker_cluster_e219eb99bc69e9e169196f1b2a3d202b = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_514cae16b827c1137612daf895e02050 = L.marker(
+                [37.566535, 126.977969],
+                {
+}
+            ).addTo(marker_cluster_e219eb99bc69e9e169196f1b2a3d202b);
+        
+    
+        var popup_8bdaebd09f7f1b26ec6c1ec147aafc75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_144085412fa301aecf86648b5c3ca013 = $(`<div id="html_144085412fa301aecf86648b5c3ca013" style="width: 100.0%; height: 100.0%;"><div style="white-space:nowrap">서울시청</div></div>`)[0];
+                popup_8bdaebd09f7f1b26ec6c1ec147aafc75.setContent(html_144085412fa301aecf86648b5c3ca013);
+            
+        
+
+        marker_514cae16b827c1137612daf895e02050.bindPopup(popup_8bdaebd09f7f1b26ec6c1ec147aafc75)
+        ;
+
+        
+    
+    
+            marker_514cae16b827c1137612daf895e02050.bindTooltip(
+                `<div>
+                     서울시청
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a0cc6951690f5d607a50ede49e8d156 = L.marker(
+                [37.579982, 126.977153],
+                {
+}
+            ).addTo(marker_cluster_e219eb99bc69e9e169196f1b2a3d202b);
+        
+    
+        var popup_22f35747ee6fb309ee2b73a132fabe7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_186b18461446001539d1bc220c27fda5 = $(`<div id="html_186b18461446001539d1bc220c27fda5" style="width: 100.0%; height: 100.0%;"><div style="white-space:nowrap">경복궁</div></div>`)[0];
+                popup_22f35747ee6fb309ee2b73a132fabe7b.setContent(html_186b18461446001539d1bc220c27fda5);
+            
+        
+
+        marker_9a0cc6951690f5d607a50ede49e8d156.bindPopup(popup_22f35747ee6fb309ee2b73a132fabe7b)
+        ;
+
+        
+    
+    
+            marker_9a0cc6951690f5d607a50ede49e8d156.bindTooltip(
+                `<div>
+                     경복궁
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_40cc33fbe52e016b68873c0012d3fd0d = L.marker(
+                [37.5513, 126.98823],
+                {
+}
+            ).addTo(marker_cluster_e219eb99bc69e9e169196f1b2a3d202b);
+        
+    
+        var popup_b1f3e4234d97e56faa78e97051559264 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_357a5da8b1101f4cfecc7174d53a42c7 = $(`<div id="html_357a5da8b1101f4cfecc7174d53a42c7" style="width: 100.0%; height: 100.0%;"><div style="white-space:nowrap">남산타워</div></div>`)[0];
+                popup_b1f3e4234d97e56faa78e97051559264.setContent(html_357a5da8b1101f4cfecc7174d53a42c7);
+            
+        
+
+        marker_40cc33fbe52e016b68873c0012d3fd0d.bindPopup(popup_b1f3e4234d97e56faa78e97051559264)
+        ;
+
+        
+    
+    
+            marker_40cc33fbe52e016b68873c0012d3fd0d.bindTooltip(
+                `<div>
+                     남산타워
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_18b134d15da0b961946e269cd613fa6e = L.marker(
+                [37.566111, 126.975],
+                {
+}
+            ).addTo(marker_cluster_e219eb99bc69e9e169196f1b2a3d202b);
+        
+    
+        var popup_674e0cbf083000aab68383b435cbdae4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b0e5262d693376e9fa0a5689d6ecd63 = $(`<div id="html_5b0e5262d693376e9fa0a5689d6ecd63" style="width: 100.0%; height: 100.0%;"><div style="white-space:nowrap">덕수궁</div></div>`)[0];
+                popup_674e0cbf083000aab68383b435cbdae4.setContent(html_5b0e5262d693376e9fa0a5689d6ecd63);
+            
+        
+
+        marker_18b134d15da0b961946e269cd613fa6e.bindPopup(popup_674e0cbf083000aab68383b435cbdae4)
+        ;
+
+        
+    
+    
+            marker_18b134d15da0b961946e269cd613fa6e.bindTooltip(
+                `<div>
+                     덕수궁
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_afedf15eb567351c077bbcf63cf648d7 = L.marker(
+                [37.5634, 126.9873],
+                {
+}
+            ).addTo(marker_cluster_e219eb99bc69e9e169196f1b2a3d202b);
+        
+    
+        var popup_89a2a23ebac00c698726d7e54120be2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9eb9c224bd9e7be8b932b2754e3a5eaa = $(`<div id="html_9eb9c224bd9e7be8b932b2754e3a5eaa" style="width: 100.0%; height: 100.0%;"><div style="white-space:nowrap">명동성당</div></div>`)[0];
+                popup_89a2a23ebac00c698726d7e54120be2d.setContent(html_9eb9c224bd9e7be8b932b2754e3a5eaa);
+            
+        
+
+        marker_afedf15eb567351c077bbcf63cf648d7.bindPopup(popup_89a2a23ebac00c698726d7e54120be2d)
+        ;
+
+        
+    
+    
+            marker_afedf15eb567351c077bbcf63cf648d7.bindTooltip(
+                `<div>
+                     명동성당
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_e219eb99bc69e9e169196f1b2a3d202b.addTo(map_8ad28ae21966c30dde10debb66bffffd);
+        
+    
+            var heat_map_30a29051fb670dae25cd480f5e80cd51 = L.heatLayer(
+                [[37.566535, 126.977969], [37.579982, 126.977153], [37.5513, 126.98823], [37.566111, 126.975], [37.5634, 126.9873]],
+                {
+  "minOpacity": 0.3,
+  "maxZoom": 18,
+  "radius": 30,
+  "blur": 20,
+}
+            );
+        
+    
+            heat_map_30a29051fb670dae25cd480f5e80cd51.addTo(map_8ad28ae21966c30dde10debb66bffffd);
+        
+</script>
+</html>
